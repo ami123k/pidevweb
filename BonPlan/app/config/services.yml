@@ -51,3 +51,12 @@ services:
         tags:
             - { name: doctrine.event_listener, event: prePersist }
             - { name: doctrine.event_listener, event: preUpdate }
+    bonplan1.image_uploader:
+        class: PubliciteBundle\ImageUpload
+        arguments: ['%images_directory%']
+    bonplan1.doctrine_image_listener:
+        class: PubliciteBundle\ImageUploadListener
+        arguments: ['@bonplan1.image_uploader']
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }

@@ -81,5 +81,8 @@ my_app_mail_homepage:
     path: /mail
     defaults: { _controller: BonPlanBundle:Mail:index}
 my_app_mail_accuse:
- path: /success
- defaults: { _controller: BonPlanBundle:Mail:success }
+    path: /success
+    defaults: { _controller: BonPlanBundle:Mail:success }
+bon_plan_publicite:
+    path:     /publicite
+    defaults: { _controller: BonPlanBundle:Default:publicite }

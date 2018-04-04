@@ -21,7 +21,8 @@ class AppKernel extends Kernel
             new Uran1980\FancyBoxBundle\Uran1980FancyBoxBundle(),
             new WhiteOctober\TCPDFBundle\WhiteOctoberTCPDFBundle(),
             new \Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
-            new \Ivory\SerializerBundle\IvorySerializerBundle()
+            new \Ivory\SerializerBundle\IvorySerializerBundle(),
+            new PubliciteBundle\PubliciteBundle(),
 
 
         ];

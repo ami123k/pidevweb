@@ -59,6 +59,7 @@
       <path value="$PROJECT_DIR$/vendor/egeloen/serializer-bundle" />
       <path value="$PROJECT_DIR$/vendor/egeloen/google-map-bundle" />
       <path value="$PROJECT_DIR$/vendor/egeloen/serializer" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />

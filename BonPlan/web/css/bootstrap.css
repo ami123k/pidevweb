@@ -1118,6 +1118,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive1,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+}
 .img-rounded {
   border-radius: 6px;
 }

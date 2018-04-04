@@ -59,8 +59,9 @@ class DefaultController extends Controller
         return $this->render('BonPlanBundle:Default:backadmin.html.twig');
     }
     public function accueilClientAction()
-    {
-        return $this->render('BonPlanBundle:Default:accueilClient.html.twig');
+    {$em = $this->getDoctrine()->getManager();
+        $Publicite = $em->getRepository("BonPlanBundle:Publicite")->findPhoto();
+        return $this->render('BonPlanBundle:Default:accueilClient.html.twig',array("Publicites" => $Publicite));
     }
     public function profileAction()
     {
@@ -69,5 +70,9 @@ class DefaultController extends Controller
     public function EvenementAdminAction()
     {
         return $this->render('BonPlanBundle:Default:evenementAdmin.html.twig');
+    }
+    public function publiciteAction()
+    {
+        return $this->render('PubliciteBundle:Default:publicite.html.twig');
     }
 }

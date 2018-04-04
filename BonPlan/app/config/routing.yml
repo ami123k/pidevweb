@@ -1,6 +1,9 @@
 bon_plan:
     resource: "@BonPlanBundle/Resources/config/routing.yml"
     prefix:   /BonPlan
+publicite:
+    resource: "@PubliciteBundle/Resources/config/routing.yml"
+    prefix:   /BonPlan
 
 app:
     resource: '@AppBundle/Controller/'
